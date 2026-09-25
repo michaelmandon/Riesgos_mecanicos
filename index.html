@@ -1,13 +1,877 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
+
+    <meta name="description"
+        content="Información de seguridad para la operación del yugulador. Identificación de riesgos y medidas de prevención.">
+
+    <title>Yugulador | Seguridad en la operación</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Bienvenido a mi página</h1>
-    <p>Esta es mi primera página web publicada con GitHub.</p>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <!-- ESPACIO PARA LOGO -->
+            <div class="logo-area">
+                <img src="img/logo.png"
+                     alt="Logo de la empresa"
+                     class="logo"
+                     onerror="this.style.display='none'; document.getElementById('logo-placeholder').style.display='flex';">
+
+                <div id="logo-placeholder" class="logo-placeholder">
+                    LOGO
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <a href="#riesgos">Riesgos</a>
+                <a href="#prevencion">Prevención</a>
+                <a href="#galeria">Galería</a>
+                <a href="#videos">Videos</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-text">
+
+                    <span class="tag">
+                        SEGURIDAD INDUSTRIAL
+                    </span>
+
+                    <h1>
+                        YUGULADOR
+                    </h1>
+
+                    <h2>
+                        Conocer el riesgo también es parte de trabajar seguro.
+                    </h2>
+
+                    <p>
+                        Identificación de los principales riesgos asociados
+                        al uso del yugulador y medidas de prevención para
+                        proteger al trabajador durante la operación.
+                    </p>
+
+                    <a href="#riesgo-principal" class="button">
+                        Conocer los riesgos
+                    </a>
+
+                </div>
+
+
+                <!-- IMAGEN PRINCIPAL -->
+
+                <div class="hero-image">
+
+                    <div class="image-placeholder">
+
+                        <span class="image-icon">⚙</span>
+
+                        <strong>
+                            IMAGEN DEL YUGULADOR
+                        </strong>
+
+                        <small>
+                            Agrega aquí una fotografía del equipo
+                        </small>
+
+                    </div>
+
+                    <!--
+                    Para colocar la fotografía real:
+
+                    <img src="img/yugulador-principal.jpg"
+                         alt="Yugulador">
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ADVERTENCIA ================= -->
+
+        <section class="warning-section">
+
+            <div class="container">
+
+                <div class="warning-box">
+
+                    <div class="warning-icon">
+                        ⚠
+                    </div>
+
+                    <div>
+
+                        <span class="warning-title">
+                            ANTES DE OPERAR
+                        </span>
+
+                        <p>
+                            Este equipo cuenta con elementos de corte
+                            que pueden generar lesiones graves.
+                            No opere el yugulador sin haber recibido
+                            la información y las instrucciones
+                            establecidas para su uso seguro.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIESGO PRINCIPAL ================= -->
+
+        <section id="riesgo-principal" class="main-risk">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <div>
+                        <span class="section-label">
+                            RIESGO PRINCIPAL
+                        </span>
+
+                        <h2>
+                            Cortes severos y amputaciones
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="main-risk-card">
+
+                    <div class="risk-big-icon">
+                        ⚠
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Riesgo mecánico crítico
+                        </h3>
+
+                        <p>
+                            El principal riesgo presente en un motor
+                            con disco de corte de un yugulador es el
+                            contacto con el disco en movimiento,
+                            que puede ocasionar cortes severos,
+                            heridas profundas o amputaciones.
+                        </p>
+
+                        <p>
+                            También existe riesgo de rotura y
+                            proyección de fragmentos del disco
+                            cuando este presenta daños, desgaste
+                            irregular o está sometido a esfuerzos
+                            laterales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIESGOS ================= -->
+
+        <section id="riesgos" class="risks-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        IDENTIFICACIÓN DE PELIGROS
+                    </span>
+
+                    <h2>
+                        Conoce los principales riesgos
+                    </h2>
+
+                    <p>
+                        Identificar los peligros antes y durante
+                        la operación permite tomar las medidas
+                        necesarias para trabajar de forma segura.
+                    </p>
+
+                </div>
+
+
+                <div class="risk-grid">
+
+
+                    <!-- CORTE -->
+
+                    <article class="risk-card critical">
+
+                        <div class="card-icon">
+                            ✂
+                        </div>
+
+                        <span class="risk-category">
+                            MECÁNICO
+                        </span>
+
+                        <h3>
+                            Cortes y amputaciones
+                        </h3>
+
+                        <p>
+                            El contacto directo con el disco de corte
+                            en movimiento, debido a fallas mecánicas,
+                            deslizamientos del animal o movimientos
+                            imprevistos del operario, puede causar
+                            heridas profundas o pérdida de extremidades.
+                        </p>
+
+                    </article>
+
+
+                    <!-- PROYECCIÓN -->
+
+                    <article class="risk-card critical">
+
+                        <div class="card-icon">
+                            💥
+                        </div>
+
+                        <span class="risk-category">
+                            MECÁNICO
+                        </span>
+
+                        <h3>
+                            Rotura y proyección del disco
+                        </h3>
+
+                        <p>
+                            Si el disco se agrieta, presenta desgaste
+                            irregular o recibe un esfuerzo lateral
+                            excesivo, puede fracturarse y proyectar
+                            fragmentos a alta velocidad.
+                        </p>
+
+                    </article>
+
+
+                    <!-- ATRAPAMIENTO -->
+
+                    <article class="risk-card critical">
+
+                        <div class="card-icon">
+                            ⚙
+                        </div>
+
+                        <span class="risk-category">
+                            MECÁNICO
+                        </span>
+
+                        <h3>
+                            Atrapamiento
+                        </h3>
+
+                        <p>
+                            El motor y las partes móviles de transmisión,
+                            cuando no están completamente protegidos,
+                            pueden generar puntos de atrapamiento para
+                            ropa, guantes o extremidades.
+                        </p>
+
+                    </article>
+
+
+                    <!-- ELÉCTRICO -->
+
+                    <article class="risk-card electrical">
+
+                        <div class="card-icon">
+                            ⚡
+                        </div>
+
+                        <span class="risk-category">
+                            ELÉCTRICO
+                        </span>
+
+                        <h3>
+                            Choque eléctrico
+                        </h3>
+
+                        <p>
+                            La presencia de agua, humedad y fluidos
+                            biológicos aumenta el riesgo de descarga
+                            eléctrica ante fallas de aislamiento,
+                            cables expuestos o ausencia de una
+                            conexión adecuada a tierra.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CAÍDAS -->
+
+                    <article class="risk-card environment">
+
+                        <div class="card-icon">
+                            👟
+                        </div>
+
+                        <span class="risk-category">
+                            ENTORNO
+                        </span>
+
+                        <h3>
+                            Caídas y pérdida de control
+                        </h3>
+
+                        <p>
+                            El suelo de la zona de degüello puede
+                            encontrarse resbaladizo. Una caída mientras
+                            se manipula o se está cerca del equipo
+                            incrementa el riesgo de accidente.
+                        </p>
+
+                    </article>
+
+
+                    <!-- BIOLÓGICO -->
+
+                    <article class="risk-card biological">
+
+                        <div class="card-icon">
+                            🦠
+                        </div>
+
+                        <span class="risk-category">
+                            BIOLÓGICO
+                        </span>
+
+                        <h3>
+                            Proyección de fluidos
+                        </h3>
+
+                        <p>
+                            El corte puede generar salpicaduras de sangre
+                            y otros fluidos corporales que pueden
+                            transportar agentes biológicos hacia
+                            el trabajador.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREVENCIÓN ================= -->
+
+        <section id="prevencion" class="prevention-section">
+
+            <div class="container">
+
+                <div class="section-heading centered light">
+
+                    <span class="section-label">
+                        PROTECCIÓN
+                    </span>
+
+                    <h2>
+                        ¿Cómo podemos prevenir estos riesgos?
+                    </h2>
+
+                    <p>
+                        El control de los peligros requiere medidas
+                        de protección adecuadas y condiciones seguras
+                        de operación.
+                    </p>
+
+                </div>
+
+
+                <div class="prevention-grid">
+
+
+                    <!-- 01 -->
+
+                    <article class="prevention-card">
+
+                        <div class="prevention-number">
+                            01
+                        </div>
+
+                        <div class="prevention-icon">
+                            🛡
+                        </div>
+
+                        <h3>
+                            Guardas de protección
+                        </h3>
+
+                        <p>
+                            Utilizar cubiertas y guardas de protección
+                            que aíslen el disco y las partes móviles
+                            del equipo tanto como sea posible.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="prevention-card">
+
+                        <div class="prevention-number">
+                            02
+                        </div>
+
+                        <div class="prevention-icon">
+                            ⛔
+                        </div>
+
+                        <h3>
+                            Sistemas de parada
+                        </h3>
+
+                        <p>
+                            Contar con sistemas de doble comando,
+                            sensores o dispositivos de parada de
+                            emergencia que permitan detener el equipo
+                            rápidamente ante una situación de riesgo.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="prevention-card">
+
+                        <div class="prevention-number">
+                            03
+                        </div>
+
+                        <div class="prevention-icon">
+                            🦺
+                        </div>
+
+                        <h3>
+                            Elementos de protección personal
+                        </h3>
+
+                        <p>
+                            Utilizar el EPP establecido para la operación,
+                            incluyendo protección corporal, manos,
+                            rostro y pies.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="prevention-card">
+
+                        <div class="prevention-number">
+                            04
+                        </div>
+
+                        <div class="prevention-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Protección eléctrica
+                        </h3>
+
+                        <p>
+                            Utilizar equipos, conexiones y protecciones
+                            eléctricas adecuadas para ambientes con
+                            alta humedad, agua y condiciones propias
+                            del proceso.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <!-- EPP -->
+
+                <div class="ppe-box">
+
+                    <div>
+
+                        <span class="ppe-label">
+                            EPP RECOMENDADO
+                        </span>
+
+                        <h3>
+                            Protección durante la operación
+                        </h3>
+
+                    </div>
+
+                    <div class="ppe-items">
+
+                        <span>🛡️ Delantal de malla de acero</span>
+
+                        <span>🧤 Guantes de malla metálica anticorte</span>
+
+                        <span>🥽 Careta de protección facial</span>
+
+                        <span>🥾 Botas antideslizantes con puntera</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALERÍA ================= -->
+
+        <section id="galeria" class="gallery-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        CONOCE EL EQUIPO
+                    </span>
+
+                    <h2>
+                        Galería del Yugulador
+                    </h2>
+
+                    <p>
+                        Espacio destinado para fotografías reales
+                        del equipo y sus principales componentes.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+
+                    <div class="gallery-item large">
+
+                        <div class="gallery-placeholder">
+
+                            <span>📷</span>
+
+                            <strong>
+                                FOTO PRINCIPAL
+                            </strong>
+
+                            <small>
+                                Vista general del yugulador
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <div class="gallery-placeholder">
+
+                            <span>📷</span>
+
+                            <strong>
+                                DISCO DE CORTE
+                            </strong>
+
+                            <small>
+                                Detalle del sistema de corte
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <div class="gallery-placeholder">
+
+                            <span>📷</span>
+
+                            <strong>
+                                GUARDA DE PROTECCIÓN
+                            </strong>
+
+                            <small>
+                                Elementos de protección
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <div class="gallery-placeholder">
+
+                            <span>📷</span>
+
+                            <strong>
+                                MOTOR
+                            </strong>
+
+                            <small>
+                                Motor y transmisión
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <div class="gallery-placeholder">
+
+                            <span>📷</span>
+
+                            <strong>
+                                ZONA DE OPERACIÓN
+                            </strong>
+
+                            <small>
+                                Entorno de trabajo
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VIDEOS ================= -->
+
+        <section id="videos" class="videos-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        MATERIAL AUDIOVISUAL
+                    </span>
+
+                    <h2>
+                        Videos informativos
+                    </h2>
+
+                    <p>
+                        Espacio destinado para videos relacionados
+                        con la seguridad y el funcionamiento del equipo.
+                    </p>
+
+                </div>
+
+
+                <div class="videos-grid">
+
+
+                    <!-- VIDEO 01 -->
+
+                    <div class="video-card">
+
+                        <div class="video-placeholder">
+
+                            <div class="play-button">
+                                ▶
+                            </div>
+
+                            <span>
+                                VIDEO 01
+                            </span>
+
+                            <small>
+                                Operación segura del yugulador
+                            </small>
+
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Operación segura
+                            </h3>
+
+                            <p>
+                                Video informativo sobre condiciones
+                                seguras durante la operación.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VIDEO 02 -->
+
+                    <div class="video-card">
+
+                        <div class="video-placeholder">
+
+                            <div class="play-button">
+                                ▶
+                            </div>
+
+                            <span>
+                                VIDEO 02
+                            </span>
+
+                            <small>
+                                Riesgos del equipo
+                            </small>
+
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Identificación de riesgos
+                            </h3>
+
+                            <p>
+                                Información audiovisual sobre los
+                                principales peligros asociados al equipo.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENSAJE FINAL ================= -->
+
+        <section class="final-message">
+
+            <div class="container">
+
+                <div class="final-card">
+
+                    <span class="final-icon">
+                        🛡️
+                    </span>
+
+                    <h2>
+                        La seguridad comienza antes de encender el equipo.
+                    </h2>
+
+                    <p>
+                        Identifica los peligros, verifica las condiciones
+                        del equipo y utiliza los elementos de protección
+                        establecidos para la operación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <strong>
+                    YUGULADOR
+                </strong>
+
+                <p>
+                    Información de seguridad del equipo
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Seguridad • Prevención • Protección
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
